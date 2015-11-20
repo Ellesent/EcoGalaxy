@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AllObjects.cs" />
+    <Compile Include="Assets\AllObjectsWater.cs" />
     <Compile Include="Assets\Button.cs" />
     <Compile Include="Assets\DailyRewards\Scripts\DailyReward.cs" />
     <Compile Include="Assets\DailyRewards\Scripts\DailyRewards.cs" />

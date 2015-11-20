@@ -9,7 +9,7 @@ public class ScrollScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && transform.position.x >= -5.6f)
         {
             transform.position -= new Vector3(speed, 0);
         }
@@ -18,4 +18,6 @@ public class ScrollScript : MonoBehaviour {
             transform.position += new Vector3(speed, 0);
         }
 	}
+
+
 }

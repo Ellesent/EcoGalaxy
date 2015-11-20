@@ -49,13 +49,15 @@ public class Button : MonoBehaviour {
 
     public void OnObjectClick(GameObject objSpawn)
     {
-        if (MoneyManager.money >= objSpawn.GetComponent<AllObjects>().howMuch)
+        
+        if ((objSpawn.GetComponent<AllObjects>() != null && MoneyManager.money >= objSpawn.GetComponent<AllObjects>().howMuch) || (objSpawn.GetComponent<AllObjectsWater>() != null && MoneyManager.money >= objSpawn.GetComponent<AllObjectsWater>().howMuch))
         {
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = 2.0f;
             Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
             GameObject blah = Instantiate(objSpawn, objectPos, Quaternion.identity) as GameObject;
-            //blah.transform.localScale = new Vector3(0.06f, 0.06f, 1);
+            //blah.transform.localScale = new Vector3(0.06f, 0.06f, 1); 
+            
 
 
             toggle.isOn = true;

@@ -1,31 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AllObjects : MonoBehaviour {
+public class AllObjectsWater : MonoBehaviour {
+
     bool isDragging = true;
     bool isMoving = false;
     public int howMuch;
-    public int pow;
-    GameObject[] grounds;
-    
+    GameObject[] water;
+
 	// Use this for initialization
 	void Start () {
+
         MoneyManager.money -= howMuch;
-        MoneyManager.power += pow;
-        
-        grounds = GameObject.FindGameObjectsWithTag("Ground");
-        if (tag == "Oxygen")
-        {
-            MoneyManager.Oxygen = true;
-            
-        }
-        
-	
+        water = GameObject.FindGameObjectsWithTag("Water");
+        //MoneyManager.power += pow;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        //Debug.Log(isMoving);
+
         if (isDragging == true)
         {
             Vector3 mouse = Input.mousePosition;
@@ -34,23 +27,19 @@ public class AllObjects : MonoBehaviour {
 
             if (Input.GetMouseButtonDown(0))
             {
-                foreach (GameObject g in grounds)
+                foreach (GameObject w in water)
                 {
                     //if (GameObject.FindGameObjectWithTag("Ground").GetComponent<Collider2D>() == Physics2D.OverlapPoint(GetComponent<Collider2D>().bounds.min))
-                    if (g.GetComponent<Collider2D>().bounds.Contains(GetComponent<Collider2D>().bounds.min) && isMoving == false)
+                    if (w.GetComponent<Collider2D>().bounds.Contains(GetComponent<Collider2D>().bounds.center) && isMoving == false)
                     {
-                        Debug.Log("yes");
-                        Debug.Log(GetComponent<Collider2D>().bounds.min);
                         isDragging = false;
                     }
                 }
             }
         }
-       
 	
 	}
 
-   
     void OnMouseDown()
     {
         if (isDragging == false)
