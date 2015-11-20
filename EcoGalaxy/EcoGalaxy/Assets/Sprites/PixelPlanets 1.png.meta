@@ -1,0 +1,1233 @@
+fileFormatVersion: 2
+guid: 4919ee2a12636d24999af8d75478e8a4
+timeCreated: 1446816122
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PixelPlanets 1_0
+    21300002: PixelPlanets 1_1
+    21300004: PixelPlanets 1_2
+    21300006: PixelPlanets 1_3
+    21300008: PixelPlanets 1_4
+    21300010: PixelPlanets 1_5
+    21300012: PixelPlanets 1_6
+    21300014: PixelPlanets 1_7
+    21300016: PixelPlanets 1_8
+    21300018: PixelPlanets 1_9
+    21300020: PixelPlanets 1_10
+    21300022: PixelPlanets 1_11
+    21300024: PixelPlanets 1_12
+    21300026: PixelPlanets 1_13
+    21300028: PixelPlanets 1_14
+    21300030: PixelPlanets 1_15
+    21300032: PixelPlanets 1_16
+    21300034: PixelPlanets 1_17
+    21300036: PixelPlanets 1_18
+    21300038: PixelPlanets 1_19
+    21300040: PixelPlanets 1_20
+    21300042: PixelPlanets 1_21
+    21300044: PixelPlanets 1_22
+    21300046: PixelPlanets 1_23
+    21300048: PixelPlanets 1_24
+    21300050: PixelPlanets 1_25
+    21300052: PixelPlanets 1_26
+    21300054: PixelPlanets 1_27
+    21300056: PixelPlanets 1_28
+    21300058: PixelPlanets 1_29
+    21300060: PixelPlanets 1_30
+    21300062: PixelPlanets 1_31
+    21300064: PixelPlanets 1_32
+    21300066: PixelPlanets 1_33
+    21300068: PixelPlanets 1_34
+    21300070: PixelPlanets 1_35
+    21300072: PixelPlanets 1_36
+    21300074: PixelPlanets 1_37
+    21300076: PixelPlanets 1_38
+    21300078: PixelPlanets 1_39
+    21300080: PixelPlanets 1_40
+    21300082: PixelPlanets 1_41
+    21300084: PixelPlanets 1_42
+    21300086: PixelPlanets 1_43
+    21300088: PixelPlanets 1_44
+    21300090: PixelPlanets 1_45
+    21300092: PixelPlanets 1_46
+    21300094: PixelPlanets 1_47
+    21300096: PixelPlanets 1_48
+    21300098: PixelPlanets 1_49
+    21300100: PixelPlanets 1_50
+    21300102: PixelPlanets 1_51
+    21300104: PixelPlanets 1_52
+    21300106: PixelPlanets 1_53
+    21300108: PixelPlanets 1_54
+    21300110: PixelPlanets 1_55
+    21300112: PixelPlanets 1_56
+    21300114: PixelPlanets 1_57
+    21300116: PixelPlanets 1_58
+    21300118: PixelPlanets 1_59
+    21300120: PixelPlanets 1_60
+    21300122: PixelPlanets 1_61
+    21300124: PixelPlanets 1_62
+    21300126: PixelPlanets 1_63
+    21300128: PixelPlanets 1_64
+    21300130: PixelPlanets 1_65
+    21300132: PixelPlanets 1_66
+    21300134: PixelPlanets 1_67
+    21300136: PixelPlanets 1_68
+    21300138: PixelPlanets 1_69
+    21300140: PixelPlanets 1_70
+    21300142: PixelPlanets 1_71
+    21300144: PixelPlanets 1_72
+    21300146: PixelPlanets 1_73
+    21300148: PixelPlanets 1_74
+    21300150: PixelPlanets 1_75
+    21300152: PixelPlanets 1_76
+    21300154: PixelPlanets 1_77
+    21300156: PixelPlanets 1_78
+    21300158: PixelPlanets 1_79
+    21300160: PixelPlanets 1_80
+    21300162: PixelPlanets 1_81
+    21300164: PixelPlanets 1_82
+    21300166: PixelPlanets 1_83
+    21300168: PixelPlanets 1_84
+    21300170: PixelPlanets 1_85
+    21300172: PixelPlanets 1_86
+    21300174: PixelPlanets 1_87
+    21300176: PixelPlanets 1_88
+    21300178: PixelPlanets 1_89
+    21300180: PixelPlanets 1_90
+    21300182: PixelPlanets 1_91
+    21300184: PixelPlanets 1_92
+    21300186: PixelPlanets 1_93
+    21300188: PixelPlanets 1_94
+    21300190: PixelPlanets 1_95
+    21300192: PixelPlanets 1_96
+    21300194: PixelPlanets 1_97
+    21300196: PixelPlanets 1_98
+    21300198: PixelPlanets 1_99
+    21300200: PixelPlanets 1_100
+    21300202: PixelPlanets 1_101
+    21300204: PixelPlanets 1_102
+    21300206: PixelPlanets 1_103
+    21300208: PixelPlanets 1_104
+    21300210: PixelPlanets 1_105
+    21300212: PixelPlanets 1_106
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: PixelPlanets 1_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 414
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 414
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 414
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_3
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 414
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_4
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 414
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_5
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 414
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_6
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 414
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_7
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 414
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_8
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 414
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_9
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 414
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 382
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 382
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_12
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 382
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_13
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 382
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_14
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 356
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_15
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 356
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_16
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 356
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_17
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 356
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_18
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 357
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_19
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 356
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_20
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 345
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 345
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_22
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 345
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_23
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 345
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_24
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 345
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_25
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 345
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_26
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 319
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_27
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 319
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_28
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 319
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_29
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 319
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_30
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 319
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_31
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 319
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_32
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 308
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_33
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 308
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_34
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 308
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_35
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 308
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_36
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 282
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_37
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 282
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_38
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 282
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_39
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 282
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_40
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 282
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_41
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 282
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_42
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 271
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_43
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 271
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_44
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 271
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_45
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 271
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_46
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 271
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_47
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 245
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_48
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 245
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_49
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 245
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_50
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 245
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_51
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 245
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_52
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 245
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_53
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 234
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_54
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 234
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_55
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 234
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_56
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 234
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_57
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 234
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_58
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 234
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_59
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 211
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_60
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 208
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_61
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 208
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_62
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 208
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_63
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 208
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_64
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 208
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_65
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 197
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_66
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 197
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_67
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 197
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_68
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 197
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_69
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 197
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_70
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 174
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_71
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 174
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_72
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 174
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_73
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 174
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_74
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 174
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_75
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 174
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_76
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 160
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_77
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 160
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_78
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 160
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_79
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 134
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_80
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 134
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_81
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 134
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_82
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 134
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_83
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 134
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_84
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 134
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_85
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 123
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_86
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 123
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_87
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 123
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_88
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 123
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_89
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 123
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_90
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 97
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_91
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 97
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_92
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 97
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_93
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 97
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_94
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 86
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_95
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 86
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_96
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 86
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_97
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 86
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_98
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 60
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_99
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 60
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_100
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 60
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_101
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 60
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_102
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 12
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_103
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 12
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_104
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 12
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_105
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 12
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PixelPlanets 1_106
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 12
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
