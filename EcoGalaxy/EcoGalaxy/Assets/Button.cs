@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class Button : MonoBehaviour {
 
     public Canvas can;
-    public static string playerName = "b0ob";
+    public static string playerName;
     public UnityEngine.UI.Toggle toggle;
+    public UnityEngine.UI.Toggle toggle1;
     public Text conqueredText;
     public dreamloLeaderBoard pc;
     public Camera main;
@@ -61,6 +62,7 @@ public class Button : MonoBehaviour {
 
 
             toggle.isOn = true;
+            toggle1.isOn = true;
         }
         
     }

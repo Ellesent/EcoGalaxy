@@ -11,6 +11,10 @@ public class Toggle : MonoBehaviour
     public Text solTitle;
     public Text solAmount;
     public Image im;
+    public Image res;
+    public Image wat;
+    public Text watText;
+
 
     // Use this for initialization
     void Start()
@@ -22,6 +26,9 @@ public class Toggle : MonoBehaviour
         solar.enabled = false;
         solTitle.enabled = false;
         solAmount.enabled = false;
+        res.enabled = false;
+        wat.enabled = false;
+        watText.enabled = false;
 
     }
 
@@ -33,17 +40,20 @@ public class Toggle : MonoBehaviour
 
     public void onChange(Image image)
     {
-        if (image.name == "NecessaryObjects")
-        {
+        
+        //if (image.name == "NecessaryObjects")
+       // {
             oxAmount.enabled = !image.enabled;
             oxShield.enabled = !image.enabled;
             oxTitle.enabled = !image.enabled;
             solar.enabled = !image.enabled;
             solTitle.enabled = !image.enabled;
             solAmount.enabled = !image.enabled;
+            image.enabled = !image.enabled;
             
-        }
-        image.enabled = !image.enabled;
+        //}
+       
+        
         //CanvasRenderer[] blah = image.GetComponentsInChildren<CanvasRenderer>();
         //foreach (CanvasRenderer b in blah)
         //{
@@ -52,5 +62,17 @@ public class Toggle : MonoBehaviour
                 
         //    }
         //}
+    }
+
+    public void Test(Image image)
+    {
+        if (image.name == "ResourceObjects")
+        {
+           
+            //res.enabled = true;
+            wat.enabled = !image.enabled;
+            watText.enabled = !image.enabled;
+            image.enabled = !image.enabled;
+        }
     }
 }

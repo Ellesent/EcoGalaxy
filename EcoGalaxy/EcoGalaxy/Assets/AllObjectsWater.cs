@@ -6,6 +6,7 @@ public class AllObjectsWater : MonoBehaviour {
     bool isDragging = true;
     bool isMoving = false;
     public int howMuch;
+    public int pow;
     GameObject[] water;
 
 	// Use this for initialization
@@ -13,7 +14,7 @@ public class AllObjectsWater : MonoBehaviour {
 
         MoneyManager.money -= howMuch;
         water = GameObject.FindGameObjectsWithTag("Water");
-        //MoneyManager.power += pow;
+        MoneyManager.power += pow;
 	}
 	
 	// Update is called once per frame

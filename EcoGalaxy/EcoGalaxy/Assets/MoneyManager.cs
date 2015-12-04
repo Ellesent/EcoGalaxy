@@ -43,7 +43,7 @@ public class MoneyManager : MonoBehaviour {
         powerText.text = "Power Left: " + power;
         ratingText.text = "Planet's rating: " + rating;
         popText.text = "Population: " + pop;
-        Debug.Log(Oxygen);
+        //Debug.Log(Oxygen);
         
     
 
