@@ -46,31 +46,46 @@ public class Level : LgJsonDictionary, IJsonable
 
 	public void HandleNewObject()
 	{
+        GameObject stance; 
 		Debug.Log("Handling Level");
+        //Application.LoadLevel(3);
+        //AsyncOperation async = new AsyncOperation();
+        //if (Application.loadedLevel != 3)
+        //{
+        //  async = Application.LoadLevelAsync(3);
+        //}
 		// TODO: put code that does something with this object
 
-        for (int i = 0; i < LevelObjectArray.Count; i++ )
-        {
-            switch(LevelObjectArray[i].id)
+        
+        
+            for (int i = 0; i < LevelObjectArray.Count; i++)
             {
-            case "SolarPanel":
-                   GameObject.Instantiate(Resources.Load("SolarPanel"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0,0, LevelObjectArray[i].rotation));
-                    break;
-            case "Battery":
-                    GameObject.Instantiate(Resources.Load("Battery"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation));
-                    break;
-            case "WoodenCrate":
-                    GameObject.Instantiate(Resources.Load("WoodenCrate"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation));
-                    break;
-            case "DoorEnter":
-                    GameObject.Instantiate(Resources.Load("DoorEnter"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation));
-                    break;
-            case "DoorExit":
-                    GameObject.Instantiate(Resources.Load("DoorExit"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation));
-                    break;
+                switch (LevelObjectArray[i].id)
+                {
+                    case "SolarPanel":
+                        GameObject.Instantiate(Resources.Load("SolarPanel"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation));
+                        //if (Physics2D.OverlapCircle(stance.transform.position, 1))
+                        //{
+                        //    Debug.Log("caught");
+                        //    GameObject.Destroy(stance);
+                        //}
+                        break;
+                    case "Oxygen":
+                        GameObject.Instantiate(Resources.Load("OxygenShield"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation));
+                        break;
+                    case "WoodenCrate":
+                        GameObject.Instantiate(Resources.Load("WoodenCrate"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation));
+                        break;
+                    case "DoorEnter":
+                        GameObject.Instantiate(Resources.Load("DoorEnter"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation));
+                        break;
+                    case "DoorExit":
+                        GameObject.Instantiate(Resources.Load("DoorExit"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation));
+                        break;
+                }
+                //GameObject.Instantiate(LevelObjectArray[i].id, new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column), Quaternion.Euler(LevelObjectArray[i].rotation))
             }
-            //GameObject.Instantiate(LevelObjectArray[i].id, new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column), Quaternion.Euler(LevelObjectArray[i].rotation))
-        }
+        
 	}
 }
 

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class AllObjects : MonoBehaviour {
-   public static bool isDragging = true;
+     bool isDragging = true;
     bool isMoving = false;
     public int howMuch;
     public int pow;
@@ -10,15 +10,19 @@ public class AllObjects : MonoBehaviour {
     
 	// Use this for initialization
 	void Start () {
+        DontDestroyOnLoad(gameObject);
+        
         if (GameControl.isLoaded == false)
         {
             MoneyManager.money -= howMuch;
             MoneyManager.power += pow;
         }
+        else { GameControl.isLoaded = false; isDragging = false; }
         
         
         
         grounds = GameObject.FindGameObjectsWithTag("Ground");
+        
         if (tag == "Oxygen")
         {
             MoneyManager.Oxygen = true;
@@ -35,9 +39,15 @@ public class AllObjects : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+       // Debug.Log("is Dragging" + isDragging); 
+        //Debug.Log("is Loaded " + GameControl.isLoaded);
         //Debug.Log(isMoving);
         if (isDragging == true && GameControl.isLoaded == false)
         {
+            if (grounds == null)
+            {
+                grounds = GameObject.FindGameObjectsWithTag("Ground");
+            }
             Vector3 mouse = Input.mousePosition;
             mouse.z = 10;
             this.transform.position = Camera.main.ScreenToWorldPoint(mouse);
@@ -73,4 +83,6 @@ public class AllObjects : MonoBehaviour {
     {
         isMoving = false;
     }
+
+    
 }

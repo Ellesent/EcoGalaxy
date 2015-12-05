@@ -12,12 +12,14 @@ public class GameControl : MonoBehaviour {
     public static GameObject test; 
     public static string name;
     public static GameControl control;
-    public static bool isLoaded = false;
+    public static bool isLoaded;
+    public Level blah;
 
 	// Use this for initialization
 	void Start () {
         objects = new List<GameObject>();
         control = this;
+        isLoaded = false;
        
 	
 	}
@@ -63,27 +65,51 @@ public class GameControl : MonoBehaviour {
     {
         BinaryFormatter bf = new BinaryFormatter();
         File.Delete(Application.persistentDataPath + "/PlayerInfo.dat");
+        objects.Clear();
 
     }
 
     public void Load()
     {
+        
         if (File.Exists(Application.persistentDataPath + "/PlayerInfo.dat"))
         {
-
-            BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Open(Application.persistentDataPath + "/PlayerInfo.dat", FileMode.Open);
-            string data = (string)bf.Deserialize(file);
-            file.Close();
-            isLoaded = true;
-            Level blah = LgJsonNode.CreateFromJsonString<Level>(data);
-            blah.HandleNewObject();
+           
+                BinaryFormatter bf = new BinaryFormatter();
+                FileStream file = File.Open(Application.persistentDataPath + "/PlayerInfo.dat", FileMode.Open);
+                string data = (string)bf.Deserialize(file);
+                file.Close();
+                isLoaded = true;
+                blah = LgJsonNode.CreateFromJsonString<Level>(data);
+                if (Application.loadedLevel != 3)
+                {
+                    Application.LoadLevel(3);
+                }
+               blah.HandleNewObject();
+                Debug.Log(data);
+       
             
-            Debug.Log(data);
+            
+            
            // test = data.test;
            // Debug.Log(data.test.name);
            // Instantiate(test);
         }
+    }
+
+    //void OnLevelWasLoaded(int level)
+    //{
+    //    if ( level == 3 && isLoaded == true)
+    //    {
+    //        Debug.Log("Handle");
+    //        blah.HandleNewObject();
+           
+    //    }
+    //}
+
+    private void DontDestroyOnLoad()
+    {
+        throw new NotImplementedException();
     }
 
   
