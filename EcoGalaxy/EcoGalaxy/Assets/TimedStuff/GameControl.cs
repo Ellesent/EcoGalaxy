@@ -85,6 +85,16 @@ public class GameControl : MonoBehaviour {
                 {
                     Application.LoadLevel(3);
                 }
+                else
+                {
+                   List<GameObject> solarPanel = new List<GameObject>();
+                   solarPanel.AddRange(GameObject.FindGameObjectsWithTag("SolarPanel"));
+                    foreach (GameObject sol in solarPanel)
+                    {
+                        Destroy(sol);
+                    }
+
+                }
                blah.HandleNewObject();
                 Debug.Log(data);
        

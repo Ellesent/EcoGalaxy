@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class AllObjects : MonoBehaviour {
      bool isDragging = true;
     bool isMoving = false;
     public int howMuch;
     public int pow;
-    GameObject[] grounds;
+    List<GameObject> grounds = new List<GameObject>();
     
 	// Use this for initialization
 	void Start () {
@@ -21,7 +22,7 @@ public class AllObjects : MonoBehaviour {
         
         
         
-        grounds = GameObject.FindGameObjectsWithTag("Ground");
+        grounds.AddRange(GameObject.FindGameObjectsWithTag("Ground"));
         
         if (tag == "Oxygen")
         {
@@ -44,9 +45,9 @@ public class AllObjects : MonoBehaviour {
         //Debug.Log(isMoving);
         if (isDragging == true && GameControl.isLoaded == false)
         {
-            if (grounds == null)
+            if (grounds.Count == 0)
             {
-                grounds = GameObject.FindGameObjectsWithTag("Ground");
+                grounds.AddRange(GameObject.FindGameObjectsWithTag("Ground"));
             }
             Vector3 mouse = Input.mousePosition;
             mouse.z = 10;
