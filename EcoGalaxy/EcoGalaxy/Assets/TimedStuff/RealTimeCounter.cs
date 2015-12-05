@@ -5,19 +5,25 @@ public class RealTimeCounter : MonoBehaviour {
 
     //create timer
     public float timer;
+    public static int count = 0;
+
+  
 
 	// Use this for initialization
 	void Start () {
-        timer = 200; 
+        timer = 200;
+       
         //init timer to starting amount
         //ResetClock();
         //update timer with real time
         timer -= TimeMaster.instance.CheckDate();
+       
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        
 
         //make timer real time - each frame
         timer -= Time.deltaTime;
@@ -31,12 +37,21 @@ public class RealTimeCounter : MonoBehaviour {
 
     void OnGUI()
     {
-        if (GUI.Button(new Rect(gameObject.transform.position.x, transform.position.y + 5, 50, 50), "Save Time"))
+        Vector2 point = Camera.main.WorldToScreenPoint(transform.position);
+        int minutes = Mathf.FloorToInt(timer / 60F);
+        int seconds = Mathf.FloorToInt(timer - minutes * 60);
+        string niceTime = string.Format("{0:0}:{1:00}", minutes, seconds);
+
+        if (timer == 0)
         {
-            ResetClock();
+            if (GUI.Button(new Rect(point.x - 30, point.y  - 120, 100, 50), "Save Time"))
+            {
+                ResetClock();
+            }
         }
 
-        GUI.Label(new Rect(gameObject.transform.position.x + 80, transform.position.y, 50, 50), timer.ToString());
+        else
+        GUI.Label(new Rect(point.x - 30, point.y - 120, 100, 50), "Time until collection " + niceTime);
     }
 
     void ResetClock()

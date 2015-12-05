@@ -19,7 +19,7 @@ public class GameControl : MonoBehaviour {
 	void Start () {
         objects = new List<GameObject>();
         control = this;
-        isLoaded = false;
+       // isLoaded = false;
        
 	
 	}
@@ -74,12 +74,12 @@ public class GameControl : MonoBehaviour {
         
         if (File.Exists(Application.persistentDataPath + "/PlayerInfo.dat"))
         {
-           
+
+                isLoaded = true;
                 BinaryFormatter bf = new BinaryFormatter();
                 FileStream file = File.Open(Application.persistentDataPath + "/PlayerInfo.dat", FileMode.Open);
                 string data = (string)bf.Deserialize(file);
                 file.Close();
-                isLoaded = true;
                 blah = LgJsonNode.CreateFromJsonString<Level>(data);
                 if (Application.loadedLevel != 3)
                 {
@@ -92,9 +92,11 @@ public class GameControl : MonoBehaviour {
                     foreach (GameObject sol in solarPanel)
                     {
                         Destroy(sol);
+                        objects.Remove(sol);
                     }
 
                 }
+                
                blah.HandleNewObject();
                 Debug.Log(data);
        

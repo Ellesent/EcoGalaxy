@@ -10,15 +10,25 @@ public class AllObjects : MonoBehaviour {
     List<GameObject> grounds = new List<GameObject>();
     
 	// Use this for initialization
-	void Start () {
-        DontDestroyOnLoad(gameObject);
-        
+
+    void Awake()
+    {
         if (GameControl.isLoaded == false)
         {
             MoneyManager.money -= howMuch;
             MoneyManager.power += pow;
         }
-        else { GameControl.isLoaded = false; isDragging = false; }
+        else
+        {
+            isDragging = false;
+        }
+    }
+	void Start () {
+        DontDestroyOnLoad(gameObject);
+        GameControl.isLoaded = false;
+        gameObject.AddComponent<RealTimeCounter>();
+        
+       //else { GameControl.isLoaded = false; isDragging = false; }
         
         
         

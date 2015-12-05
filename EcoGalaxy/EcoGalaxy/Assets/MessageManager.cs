@@ -63,7 +63,9 @@ public class Level : LgJsonDictionary, IJsonable
                 switch (LevelObjectArray[i].id)
                 {
                     case "SolarPanel":
-                        GameObject.Instantiate(Resources.Load("SolarPanel"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation));
+                       stance= GameObject.Instantiate(Resources.Load("SolarPanel"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation)) as GameObject;
+                       stance.AddComponent<RealTimeCounter>();
+
                         //if (Physics2D.OverlapCircle(stance.transform.position, 1))
                         //{
                         //    Debug.Log("caught");
@@ -85,6 +87,7 @@ public class Level : LgJsonDictionary, IJsonable
                 }
                 //GameObject.Instantiate(LevelObjectArray[i].id, new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column), Quaternion.Euler(LevelObjectArray[i].rotation))
             }
+            //GameControl.isLoaded = false;
         
 	}
 }
