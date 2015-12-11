@@ -16,6 +16,15 @@ public class Toggle : MonoBehaviour
     public Text watText;
     public Image food;
     public Text foodText;
+    GameObject woo;
+
+    public GameObject obj;
+
+
+
+    public Image tasks;
+    //public ScrollRect achieveScroll;
+    public GameObject achievements;
 
     public Text message;
 
@@ -23,6 +32,11 @@ public class Toggle : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        obj.transform.GetChild(0).gameObject.SetActive(false);
+        obj.transform.GetChild(1).gameObject.SetActive(false);
+        obj.transform.GetChild(2).gameObject.SetActive(false);
+        obj.transform.GetChild(3).gameObject.SetActive(false);
+   
         oxShield.enabled = false;
         oxAmount.enabled = false;
         im.enabled = false;
@@ -35,6 +49,9 @@ public class Toggle : MonoBehaviour
         watText.enabled = false;
         food.enabled = false;
         foodText.enabled = false;
+
+        //achieveScroll.enabled = false;
+        tasks.enabled = false;
 
     }
 
@@ -86,5 +103,38 @@ public class Toggle : MonoBehaviour
             message.text = "";
            
         }
+    }
+
+    public void Achievements(UnityEngine.UI.Toggle toggle)
+    {
+        
+        //achieveScroll.enabled = !achieveScroll.enabled;
+        tasks.enabled = !tasks.enabled;
+        //one.enabled = !one.enabled;
+        //two.enabled = !two.enabled;
+       // three.enabled = !three.enabled;
+        //four.enabled = !four.enabled;
+
+        if (!toggle.isOn)
+        {
+            obj.transform.GetChild(0).gameObject.SetActive(true);
+            obj.transform.GetChild(1).gameObject.SetActive(true);
+            obj.transform.GetChild(2).gameObject.SetActive(true);
+            obj.transform.GetChild(3).gameObject.SetActive(true);
+            woo = Instantiate(achievements);
+            woo.transform.position += new Vector3(-7, 2);
+        }
+        else
+        {
+            obj.transform.GetChild(0).gameObject.SetActive(false);
+            obj.transform.GetChild(1).gameObject.SetActive(false);
+            obj.transform.GetChild(2).gameObject.SetActive(false);
+            obj.transform.GetChild(3).gameObject.SetActive(false);
+            Destroy(woo);
+        }
+        
+       // woo.transform.SetParent(ViewPort.transform);
+
+
     }
 }

@@ -19,6 +19,12 @@ public class GameControl : MonoBehaviour {
 	void Start () {
         objects = new List<GameObject>();
         control = this;
+
+        if (Application.loadedLevel == 3)
+        {
+            AchievementManager.LockAchievement("first");
+        }
+        
        // isLoaded = false;
        
 	
@@ -49,6 +55,7 @@ public class GameControl : MonoBehaviour {
 
     public void Save()
     {
+       // Achievements.first.Value = true;
         BinaryFormatter bf = new BinaryFormatter();
 
         //create needed files

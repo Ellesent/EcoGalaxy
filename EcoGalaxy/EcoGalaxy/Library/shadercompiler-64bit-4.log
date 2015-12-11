@@ -1,3 +1,5 @@
 Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-4-10224
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-4-14288
 Cmd: getPlatforms
+Cmd: compileSnippet
+  api=8 type=1 insize=1477 outsize=1081 kw= pd=UNITY_NO_SCREENSPACE_SHADOWS UNITY_NO_LINEAR_COLORSPACE ok=1

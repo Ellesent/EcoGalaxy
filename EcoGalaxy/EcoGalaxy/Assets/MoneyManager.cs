@@ -31,6 +31,7 @@ public class MoneyManager : MonoBehaviour {
         //rating = 0;
         //conquered = 0;
         //help.LoadScores();
+        //Achievements.first.Value = true;
         
 	}
 	

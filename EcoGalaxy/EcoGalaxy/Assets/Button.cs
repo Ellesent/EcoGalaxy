@@ -139,7 +139,7 @@ public class Button : MonoBehaviour {
         if (field.text.Length > 0)
         {
         playerName = field.text;
-        Application.LoadLevel(6);
+        Application.LoadLevel(7);
         }
         else{
             field.placeholder.GetComponent<Text>().text = "Please enter a name";

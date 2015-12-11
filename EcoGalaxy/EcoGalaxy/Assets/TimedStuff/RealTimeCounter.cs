@@ -48,6 +48,9 @@ public class RealTimeCounter : MonoBehaviour {
 
     void OnGUI()
     {
+        GUIStyle style = new GUIStyle();
+        style.fontSize = 15;
+        style.normal.textColor = Color.black;
         Vector2 point = Camera.main.WorldToScreenPoint(transform.position);
         int minutes = Mathf.FloorToInt(timer / 60F);
         int seconds = Mathf.FloorToInt(timer - minutes * 60);
@@ -76,7 +79,7 @@ public class RealTimeCounter : MonoBehaviour {
 
         else if (GameControl.isLoaded == false)
         {
-            GUI.Label(new Rect(point.x - 30, point.y - 120, 100, 50), "Time until collection " + niceTime);
+            GUI.Label(new Rect(point.x - 30, point.y - 120, 100, 50), "Time until collection " + niceTime, style);
         }
     }
 
