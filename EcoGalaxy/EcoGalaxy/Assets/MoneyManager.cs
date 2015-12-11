@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 public class MoneyManager : MonoBehaviour {
 
-    public static int money;
+    public static int money = 150000;
     public static bool Oxygen = false;
     public static int food = 50;
     public static int water = 50;
@@ -23,7 +23,7 @@ public class MoneyManager : MonoBehaviour {
     
 	// Use this for initialization
 	void Start () {
-	    money = 150000;
+	    //money = 150000;
         //food = 50;
         //water = 50;
         //buildMat = 50;

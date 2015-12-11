@@ -50,19 +50,28 @@ public class GameControl : MonoBehaviour {
     public void Save()
     {
         BinaryFormatter bf = new BinaryFormatter();
+
+        //create needed files
         FileStream file = File.Create(Application.persistentDataPath + "/PlayerInfo.dat");
         FileStream res = File.Create(Application.persistentDataPath + "/ResourceInfo.dat");
 
-       // PlayerData data = new PlayerData();
+       // Get current resource numbers
         ResourceControl data = new ResourceControl();
         data.money = MoneyManager.money;
-        Debug.Log("Money Saved:" + data.money);
+        data.water = MoneyManager.water;
+        data.food = MoneyManager.food;
+        data.power = MoneyManager.power;
+        data.buildMat = MoneyManager.buildMat;
+        data.rating = MoneyManager.rating;
+        data.pop = MoneyManager.pop;
+        data.conquered = MoneyManager.conquered;
+        data.oxygen = MoneyManager.Oxygen;
         
-
-        //data.test = test;
-
+        //serialize the information to the specified file
         bf.Serialize(file, ConvertObjects());
         bf.Serialize(res, data);
+
+        //close the files and confirm save
         file.Close();
         res.Close();
         Debug.Log("Saved");
@@ -79,14 +88,27 @@ public class GameControl : MonoBehaviour {
 
     public void Load()
     {
+        //check if file exists
         if (File.Exists(Application.persistentDataPath + "/ResourceInfo.dat"))
         {
             BinaryFormatter bf = new BinaryFormatter();
+
+            //open file and deserialize data into an object we can work with
             FileStream res = File.Open(Application.persistentDataPath + "/ResourceInfo.dat", FileMode.Open);
             ResourceControl dat = (ResourceControl)bf.Deserialize(res);
+
+            //Set all resources to loaded resources
             MoneyManager.money = dat.money;
-            //Debug.Log("Loading" + dat.money);
-            //ebug.Log("loaded" + MoneyManager.money);
+            MoneyManager.water = dat.water;
+            MoneyManager.food = dat.food;
+            MoneyManager.power = dat.power;
+            MoneyManager.pop = dat.pop;
+            MoneyManager.rating = dat.rating;
+            MoneyManager.Oxygen = dat.oxygen;
+            MoneyManager.buildMat = dat.buildMat;
+            MoneyManager.conquered = dat.conquered;
+
+            Debug.Log(dat.oxygen);
             res.Close();
             
         }
@@ -173,7 +195,8 @@ public class ResourceControl
     public int buildMat;
     public int rating;
     public int pop;
-    public int conquered; 
+    public int conquered;
+    public bool oxygen; 
 }
 
 //[Serializable]
