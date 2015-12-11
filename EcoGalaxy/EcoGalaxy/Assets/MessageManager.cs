@@ -24,7 +24,9 @@ public class LevelObject : LgJsonDictionary, IJsonable
 	public float row { get { return GetValue<float>("row", 0); } set { SetValue<float>("row", value); } }             // The row of the "grid" that the object occupies
 	public float column { get { return GetValue<float>("column", 0); } set { SetValue<float>("column", value); } }      // The column of the "grid" that the object occupies
 	public float rotation { get { return GetValue<float>("rotation", 0); } set { SetValue<float>("rotation", value); } }  // The rotation of the object, in degrees, in a clockwise manner.  A zero rotation would be "upright".
-    public int sceneNumber { get { return GetValue<int>("sceneNumber", 0); } set { SetValue<int>("sceneNumber", value); } } 
+    public int sceneNumber { get { return GetValue<int>("sceneNumber", 0); } set { SetValue<int>("sceneNumber", value); } }
+
+   
 	
 	public void HandleNewObject()
 	{
@@ -64,7 +66,7 @@ public class Level : LgJsonDictionary, IJsonable
                 {
                     case "SolarPanel":
                        stance= GameObject.Instantiate(Resources.Load("SolarPanel"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation)) as GameObject;
-                       stance.AddComponent<RealTimeCounter>();
+                       //stance.AddComponent<RealTimeCounter>();
 
                         //if (Physics2D.OverlapCircle(stance.transform.position, 1))
                         //{
@@ -75,8 +77,8 @@ public class Level : LgJsonDictionary, IJsonable
                     case "Oxygen":
                         GameObject.Instantiate(Resources.Load("OxygenShield"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation));
                         break;
-                    case "WoodenCrate":
-                        GameObject.Instantiate(Resources.Load("WoodenCrate"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation));
+                    case "Food":
+                        GameObject.Instantiate(Resources.Load("Food"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation));
                         break;
                     case "DoorEnter":
                         GameObject.Instantiate(Resources.Load("DoorEnter"), new Vector3(LevelObjectArray[i].row, LevelObjectArray[i].column, 0), Quaternion.Euler(0, 0, LevelObjectArray[i].rotation));

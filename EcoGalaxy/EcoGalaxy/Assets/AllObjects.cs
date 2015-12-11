@@ -8,6 +8,7 @@ public class AllObjects : MonoBehaviour {
     public int howMuch;
     public int pow;
     List<GameObject> grounds = new List<GameObject>();
+    //public static AllObjects al;
     
 	// Use this for initialization
 
@@ -24,21 +25,23 @@ public class AllObjects : MonoBehaviour {
         }
     }
 	void Start () {
+        ///al = this;
         DontDestroyOnLoad(gameObject);
         GameControl.isLoaded = false;
-        gameObject.AddComponent<RealTimeCounter>();
+        //gameObject.AddComponent<RealTimeCounter>();
         
        //else { GameControl.isLoaded = false; isDragging = false; }
         
         
         
+        
         grounds.AddRange(GameObject.FindGameObjectsWithTag("Ground"));
         
-        if (tag == "Oxygen")
-        {
-            MoneyManager.Oxygen = true;
+        //if (tag == "Oxygen")
+        //{
+        //    MoneyManager.Oxygen = true;
             
-        }
+        //}
         if (!GameControl.objects.Contains(gameObject))
         {
             GameControl.objects.Add(gameObject);

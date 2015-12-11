@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 public class MoneyManager : MonoBehaviour {
 
-    public static int money = 150000;
+    public static int money;
     public static bool Oxygen = false;
     public static int food = 50;
     public static int water = 50;
@@ -23,7 +23,7 @@ public class MoneyManager : MonoBehaviour {
     
 	// Use this for initialization
 	void Start () {
-	    //money = 150000;
+	    money = 150000;
         //food = 50;
         //water = 50;
         //buildMat = 50;
@@ -43,6 +43,17 @@ public class MoneyManager : MonoBehaviour {
         powerText.text = "Power Left: " + power;
         ratingText.text = "Planet's rating: " + rating;
         popText.text = "Population: " + pop;
+        //Debug.Log(Oxygen);
+
+        if (Oxygen == false)
+        {
+            GameObject ox = GameObject.FindGameObjectWithTag("Oxygen");
+            if (ox != null)
+            {
+                Oxygen = true;
+            }
+        }
+
         //Debug.Log(Oxygen);
         
     

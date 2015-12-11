@@ -51,13 +51,20 @@ public class GameControl : MonoBehaviour {
     {
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Application.persistentDataPath + "/PlayerInfo.dat");
+        FileStream res = File.Create(Application.persistentDataPath + "/ResourceInfo.dat");
 
        // PlayerData data = new PlayerData();
+        ResourceControl data = new ResourceControl();
+        data.money = MoneyManager.money;
+        Debug.Log("Money Saved:" + data.money);
+        
 
         //data.test = test;
 
         bf.Serialize(file, ConvertObjects());
+        bf.Serialize(res, data);
         file.Close();
+        res.Close();
         Debug.Log("Saved");
        
     }
@@ -65,12 +72,24 @@ public class GameControl : MonoBehaviour {
     {
         BinaryFormatter bf = new BinaryFormatter();
         File.Delete(Application.persistentDataPath + "/PlayerInfo.dat");
+        File.Delete(Application.persistentDataPath + "/ResourceInfo.dat");
         objects.Clear();
 
     }
 
     public void Load()
     {
+        if (File.Exists(Application.persistentDataPath + "/ResourceInfo.dat"))
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream res = File.Open(Application.persistentDataPath + "/ResourceInfo.dat", FileMode.Open);
+            ResourceControl dat = (ResourceControl)bf.Deserialize(res);
+            MoneyManager.money = dat.money;
+            //Debug.Log("Loading" + dat.money);
+            //ebug.Log("loaded" + MoneyManager.money);
+            res.Close();
+            
+        }
         
         if (File.Exists(Application.persistentDataPath + "/PlayerInfo.dat"))
         {
@@ -79,6 +98,7 @@ public class GameControl : MonoBehaviour {
                 BinaryFormatter bf = new BinaryFormatter();
                 FileStream file = File.Open(Application.persistentDataPath + "/PlayerInfo.dat", FileMode.Open);
                 string data = (string)bf.Deserialize(file);
+                
                 file.Close();
                 blah = LgJsonNode.CreateFromJsonString<Level>(data);
                 if (Application.loadedLevel != 3)
@@ -88,17 +108,34 @@ public class GameControl : MonoBehaviour {
                 else
                 {
                    List<GameObject> solarPanel = new List<GameObject>();
+                   List<GameObject> oxygenList = new List<GameObject>();
+                   List<GameObject> foodList = new List<GameObject>();
                    solarPanel.AddRange(GameObject.FindGameObjectsWithTag("SolarPanel"));
+                   oxygenList.AddRange(GameObject.FindGameObjectsWithTag("Oxygen"));
+                   foodList.AddRange(GameObject.FindGameObjectsWithTag("Food"));
                     foreach (GameObject sol in solarPanel)
                     {
-                        Destroy(sol);
+                        GameObject temp = sol;
+                        Destroy(temp);
                         objects.Remove(sol);
+                    }
+                    foreach(GameObject ox in oxygenList)
+                    {
+                        GameObject temp = ox;
+                        Destroy(temp);
+                        objects.Remove(ox);
+                    }
+                    foreach (GameObject fo in foodList)
+                    {
+                        GameObject temp = fo;
+                        Destroy(temp);
+                        objects.Remove(fo);
                     }
 
                 }
                 
                blah.HandleNewObject();
-                Debug.Log(data);
+                //Debug.Log(data);
        
             
             
@@ -125,6 +162,18 @@ public class GameControl : MonoBehaviour {
     }
 
   
+}
+[Serializable]
+public class ResourceControl
+{
+    public int money;
+    public int water;
+    public int food;
+    public int power;
+    public int buildMat;
+    public int rating;
+    public int pop;
+    public int conquered; 
 }
 
 //[Serializable]

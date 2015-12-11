@@ -9,6 +9,7 @@ public class Button : MonoBehaviour {
     public static string playerName;
     public UnityEngine.UI.Toggle toggle;
     public UnityEngine.UI.Toggle toggle1;
+    public UnityEngine.UI.Toggle toggle2;
     public Text conqueredText;
     public dreamloLeaderBoard pc;
     public Camera main;
@@ -19,6 +20,8 @@ public class Button : MonoBehaviour {
     public Image arch;
     public Text tArt;
     public Text Title;
+
+    public Text message;
 
     bool isTwoPlayer;
    
@@ -48,10 +51,69 @@ public class Button : MonoBehaviour {
         Application.LoadLevel(level);
     }
 
+
+
     public void OnObjectClick(GameObject objSpawn)
     {
+        if (objSpawn.tag == "Food")
+        {
+           if (MoneyManager.Oxygen == false)
+           {
+               Debug.Log("no");
+               message.text = "This object needs oxygen first";
+           }
+           else
+           {
+               if ((objSpawn.GetComponent<AllObjects>() != null && MoneyManager.money >= objSpawn.GetComponent<AllObjects>().howMuch) || (objSpawn.GetComponent<AllObjectsWater>() != null && MoneyManager.money >= objSpawn.GetComponent<AllObjectsWater>().howMuch))
+               {
+                   Vector3 mousePos = Input.mousePosition;
+                   mousePos.z = 2.0f;
+                   Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
+                   GameObject blah = Instantiate(objSpawn, objectPos, Quaternion.identity) as GameObject;
+                   //blah.transform.localScale = new Vector3(0.06f, 0.06f, 1); 
+
+
+
+                   toggle.isOn = true;
+                   toggle1.isOn = true;
+                   toggle2.isOn = true;
+               }
+
+               else
+               {
+                   message.text = "Not enough money";
+               }
+           }
+        }
+
+        else if (objSpawn.tag == "WaterCollect")
+        {
+            if (MoneyManager.power < Mathf.Abs(objSpawn.GetComponent<AllObjectsWater>().pow))
+            {
+                Debug.Log("no power");
+                message.text = "Not enough power";
+            }
+            else if ((objSpawn.GetComponent<AllObjects>() != null && MoneyManager.money >= objSpawn.GetComponent<AllObjects>().howMuch) || (objSpawn.GetComponent<AllObjectsWater>() != null && MoneyManager.money >= objSpawn.GetComponent<AllObjectsWater>().howMuch))
+            {
+                Vector3 mousePos = Input.mousePosition;
+                mousePos.z = 2.0f;
+                Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
+                GameObject blah = Instantiate(objSpawn, objectPos, Quaternion.identity) as GameObject;
+                //blah.transform.localScale = new Vector3(0.06f, 0.06f, 1); 
+
+
+
+                toggle.isOn = true;
+                toggle1.isOn = true;
+                toggle2.isOn = true;
+            }
+            else
+            {
+                message.text = "Not enough money";
+            }
+        }
         
-        if ((objSpawn.GetComponent<AllObjects>() != null && MoneyManager.money >= objSpawn.GetComponent<AllObjects>().howMuch) || (objSpawn.GetComponent<AllObjectsWater>() != null && MoneyManager.money >= objSpawn.GetComponent<AllObjectsWater>().howMuch))
+        else if ((objSpawn.GetComponent<AllObjects>() != null && MoneyManager.money >= objSpawn.GetComponent<AllObjects>().howMuch) || (objSpawn.GetComponent<AllObjectsWater>() != null && MoneyManager.money >= objSpawn.GetComponent<AllObjectsWater>().howMuch))
         {
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = 2.0f;
@@ -63,6 +125,11 @@ public class Button : MonoBehaviour {
 
             toggle.isOn = true;
             toggle1.isOn = true;
+            toggle2.isOn = true;
+        }
+        else
+        {
+            message.text = "Not enough money";
         }
         
     }

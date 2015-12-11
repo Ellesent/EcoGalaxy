@@ -14,6 +14,10 @@ public class Toggle : MonoBehaviour
     public Image res;
     public Image wat;
     public Text watText;
+    public Image food;
+    public Text foodText;
+
+    public Text message;
 
 
     // Use this for initialization
@@ -29,6 +33,8 @@ public class Toggle : MonoBehaviour
         res.enabled = false;
         wat.enabled = false;
         watText.enabled = false;
+        food.enabled = false;
+        foodText.enabled = false;
 
     }
 
@@ -50,7 +56,8 @@ public class Toggle : MonoBehaviour
             solTitle.enabled = !image.enabled;
             solAmount.enabled = !image.enabled;
             image.enabled = !image.enabled;
-            
+
+            message.text = "";
         //}
        
         
@@ -72,7 +79,12 @@ public class Toggle : MonoBehaviour
             //res.enabled = true;
             wat.enabled = !image.enabled;
             watText.enabled = !image.enabled;
+            food.enabled = !image.enabled;
+            foodText.enabled = !image.enabled;
             image.enabled = !image.enabled;
+
+            message.text = "";
+           
         }
     }
 }
